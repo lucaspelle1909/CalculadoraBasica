@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author Intruder
+ * @author Naruto
  */
 public class CalculadoraBasica {
     
@@ -31,16 +31,16 @@ public class CalculadoraBasica {
         
         switch(op){
             case 1:
-                System.out.println(Conta.somar(a, b));
+                System.out.println("O resultado é"+Conta.somar(a, b));
                 break;
             case 2:
-                System.out.println(Conta.diminuir(a, b));
+                System.out.println("O resultado é"+Conta.diminuir(a, b));
                 break;
             case 3:
-                System.out.println(Conta.multiplicar(a, b));
+                System.out.println("O resultado é"+Conta.multiplicar(a, b));
                 break;
             case 4:
-                System.out.println(Conta.dividir(a, b));
+                System.out.println("O resultado é"+Conta.dividir(a, b));
         }
     }
 
