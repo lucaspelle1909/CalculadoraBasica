@@ -14,7 +14,7 @@ public class CalculadoraBasica {
         double b = s.nextDouble();
         System.out.println("Digite o segundo número:");
         double a = s.nextDouble();
-
+        
     }
 
 }
