@@ -8,17 +8,25 @@ import java.util.Scanner;
  */
 public class CalculadoraBasica {
     
+    public static void menu(){
+        System.out.println("1 - SOMARn"
+                + "2 - SUBTRAÇÃO\n"
+                + "3 - MULTIPLICAÇÃO\n"
+                + "4 - DIVISÃO");
+    }
+    
     public static void main(String[] args) {
+        
+        /* Calculadora com as quatro operações básicas */
+        
+        
         Scanner s = new Scanner(System.in);
         System.out.println("Digite o primeiro número:");
         double a = s.nextDouble();
         System.out.println("Digite o segundo número:");
         double b = s.nextDouble();
         System.out.println("Informe o número da operação");
-        System.out.println("1 - SOMARn"
-                + "2 - SUBTRAÇÃO\n"
-                + "3 - MULTIPLICAÇÃO\n"
-                + "4 - DIVISÃO");
+        menu();
         int op=s.nextInt();
         
         switch(op){
