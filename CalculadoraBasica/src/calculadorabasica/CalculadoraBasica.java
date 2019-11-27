@@ -11,15 +11,29 @@ public class CalculadoraBasica {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         System.out.println("Digite o primeiro número:");
-        double b = s.nextDouble();
-        System.out.println("Digite o segundo número:");
         double a = s.nextDouble();
+        System.out.println("Digite o segundo número:");
+        double b = s.nextDouble();
         System.out.println("Informe o número da operação");
         System.out.println("1 - SOMARn"
                 + "2 - SUBTRAÇÃO\n"
                 + "3 - MULTIPLICAÇÃO\n"
                 + "4 - DIVISÃO");
         int op=s.nextInt();
+        
+        switch(op){
+            case 1:
+                System.out.println(Conta.somar(a, b));
+                break;
+            case 2:
+                System.out.println(Conta.diminuir(a, b));
+                break;
+            case 3:
+                System.out.println(Conta.multiplicar(a, b));
+                break;
+            case 4:
+                System.out.println(Conta.dividir(a, b));
+        }
     }
 
 }
